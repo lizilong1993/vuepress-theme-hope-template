@@ -1,8 +1,10 @@
 # vuepress-theme-hope template
 
-Template for vuepress-theme-hope.
+**Template for [vuepress-theme-hope](https://github.com/Mister-Hope/vuepress-theme-hope).**
 
-You can begin your vuepress-theme-hope trip by creating a repo from this tempalte.
+You can begin your vuepress-theme-hope trip by creating a repo from this template.
+
+> Please report bugs on [main repo](https://github.com/Mister-Hope/vuepress-theme-hope)
 
 - Install deps:
 

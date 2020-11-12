@@ -37,6 +37,7 @@ module.exports = config({
       "/": [
         "",
         "home",
+        "slides",
         {
           title: "Guide",
           icon: "creative",
@@ -66,6 +67,7 @@ module.exports = config({
           "/zh/": [
             "",
             "home",
+            "slides",
             {
               title: "如何使用",
               icon: "creative",
