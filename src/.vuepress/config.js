@@ -5,7 +5,28 @@ module.exports = config({
   description: "A demo for vuepress-theme-hope",
 
   base: "/vuepress-theme-hope-template/",
+
   dest: "./dist",
+
+  // remove this if you are not using Vue and React in "markdownEnhance: code demo"
+  head: [
+    [
+      "script",
+      { src: "https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" },
+    ],
+    [
+      "script",
+      {
+        src:
+          "https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js",
+      },
+    ],
+    ["script", { src: "https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js" }],
+    [
+      "script",
+      { src: "https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js" },
+    ],
+  ],
 
   locales: {
     "/zh/": {
@@ -16,7 +37,7 @@ module.exports = config({
 
   themeConfig: {
     logo: "/logo.svg",
-    hostname: "https://mister-hope.github.io/vuepress-theme-hope-template",
+    hostname: "https://vuepress-theme-demo.mrhope.site/",
 
     nav: [
       { text: "Blog Home", link: "/", icon: "home" },
@@ -102,11 +123,25 @@ module.exports = config({
     },
 
     footer: {
+      display: true,
       content: "默认页脚",
     },
 
     mdEnhance: {
+      // please only enable the features you need
       enableAll: true,
+      presentation: {
+        plugins: [
+          "highlight",
+          "math",
+          "search",
+          "notes",
+          "zoom",
+          "anything",
+          "audio",
+          "chalkboard",
+        ],
+      },
     },
 
     pwa: {
